@@ -4,7 +4,7 @@ services:
     container_name: scraperr
     command: ["npm", "run", "start"]
     environment:
-      - NEXT_PUBLIC_API_URL=https://iccw0k88sc80g88w84wwwk4w.coolify.randomsynergy.xyz
+      - NEXT_PUBLIC_API_URL=
       - SERVER_URL=http://scraperr_api:8000  # Keep this for internal Docker network communication
     networks:
       - scraperrNET
