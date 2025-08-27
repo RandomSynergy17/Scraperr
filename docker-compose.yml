@@ -7,7 +7,7 @@ services:
       - NEXT_PUBLIC_API_URL=https://iccw0k88sc80g88w84wwwk4w.coolify.randomsynergy.xyz
       - SERVER_URL=http://scraperr_api:8000  # Keep this for internal Docker network communication
     networks:
-      - web
+      - scraperrNET
       
   scraperr_api:
     init: true
@@ -20,7 +20,7 @@ services:
       - "$PWD/data:/project/app/data"
       - "$PWD/media:/project/app/media"
     networks:
-      - web
+      - scraperrNET
 
 networks:
-  web:
+  scraperrNET:
